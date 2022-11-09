@@ -1,4 +1,7 @@
+import 'package:club_election_app_flutter/screens/management_dashboard.dart';
+import 'package:club_election_app_flutter/screens/results_screen.dart';
 import 'package:club_election_app_flutter/screens/user_selection_screen.dart';
+import 'package:club_election_app_flutter/screens/voter_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -18,6 +21,9 @@ class MyApp extends StatelessWidget {
       initialRoute: UserSelectionScreen.routeName,
       routes: {
         UserSelectionScreen.routeName: (context) => const UserSelectionScreen(),
+        VoterScreen.routeName: (context) => const VoterScreen(),
+        ManagementDashboard.routeName: (context) => const ManagementDashboard(),
+        ResultsScreen.routeName: (context) => const ResultsScreen(),
       },
     );
   }
