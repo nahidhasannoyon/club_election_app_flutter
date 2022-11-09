@@ -1,4 +1,4 @@
-import 'package:club_election_app_flutter/screens/management_dashboard.dart';
+import 'package:club_election_app_flutter/screens/managements/management_dashboard.dart';
 import 'package:club_election_app_flutter/screens/results_screen.dart';
 import 'package:club_election_app_flutter/screens/voter_screen.dart';
 import 'package:flutter/material.dart';
