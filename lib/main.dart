@@ -1,4 +1,8 @@
-import 'package:club_election_app_flutter/screens/management_dashboard.dart';
+import 'package:club_election_app_flutter/screens/managements/candidates_screen.dart';
+import 'package:club_election_app_flutter/screens/managements/clubs_screen.dart';
+import 'package:club_election_app_flutter/screens/managements/management_dashboard.dart';
+import 'package:club_election_app_flutter/screens/managements/vote_setting_screen.dart';
+import 'package:club_election_app_flutter/screens/managements/voters_screen.dart';
 import 'package:club_election_app_flutter/screens/results_screen.dart';
 import 'package:club_election_app_flutter/screens/user_selection_screen.dart';
 import 'package:club_election_app_flutter/screens/voter_screen.dart';
@@ -10,8 +14,6 @@ void main() {
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
-
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -25,6 +27,10 @@ class MyApp extends StatelessWidget {
         VoterScreen.routeName: (context) => const VoterScreen(),
         ManagementDashboard.routeName: (context) => const ManagementDashboard(),
         ResultsScreen.routeName: (context) => const ResultsScreen(),
+        ClubsScreen.routeName: (context) => const ClubsScreen(),
+        CandidatesScreen.routeName: (context) => const CandidatesScreen(),
+        VotersScreen.routeName: (context) => const VotersScreen(),
+        VoteSettingScreen.routeName: (context) => const VoteSettingScreen(),
       },
     );
   }
