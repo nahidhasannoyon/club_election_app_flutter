@@ -14,9 +14,15 @@ class ManagementDrawer extends StatelessWidget {
         children: <Widget>[
           const DrawerHeader(
             decoration: BoxDecoration(
+              image: DecorationImage(
+                image: AssetImage(
+                  'images/management.jpg',
+                ),
+                fit: BoxFit.fill,
+              ),
               color: Colors.blue,
             ),
-            child: Text('Drawer Header'),
+            child: Text(''),
           ),
           DrawerListTile(
             label: 'Clubs',
