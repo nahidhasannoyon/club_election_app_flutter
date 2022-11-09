@@ -1,3 +1,7 @@
+import 'package:club_election_app_flutter/screens/managements/candidates_screen.dart';
+import 'package:club_election_app_flutter/screens/managements/clubs_screen.dart';
+import 'package:club_election_app_flutter/screens/managements/vote_setting_screen.dart';
+import 'package:club_election_app_flutter/screens/managements/voters_screen.dart';
 import 'package:club_election_app_flutter/widgets/drawer_list_tile.dart';
 import 'package:flutter/material.dart';
 
@@ -27,31 +31,31 @@ class ManagementDrawer extends StatelessWidget {
           DrawerListTile(
             label: 'Clubs',
             onTap: () {
-              Navigator.pop(context);
+              Navigator.of(context).pushNamed(ClubsScreen.routeName);
             },
           ),
           DrawerListTile(
             label: 'Candidates',
             onTap: () {
-              Navigator.pop(context);
+              Navigator.of(context).pushNamed(CandidatesScreen.routeName);
             },
           ),
           DrawerListTile(
             label: 'Voters',
             onTap: () {
-              Navigator.pop(context);
+              Navigator.of(context).pushNamed(VotersScreen.routeName);
             },
           ),
           DrawerListTile(
             label: 'Settings',
             onTap: () {
-              Navigator.pop(context);
+              Navigator.of(context).pushNamed(VoteSettingScreen.routeName);
             },
           ),
           DrawerListTile(
             label: 'Logout',
             onTap: () {
-              Navigator.pop(context);
+              // todo logout
             },
           ),
         ],
